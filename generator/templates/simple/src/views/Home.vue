@@ -45,7 +45,7 @@
 <%# -------------------- Is Using TypeScript  -------------------- -%>
 <script lang="ts">
   import { Component, Vue } from 'vue-property-decorator';
-  import HelloWorld from 'components/HelloWorld.vue';
+  import HelloWorld from '~/components/HelloWorld.vue';
 
   const { VUE_APP_MODE, VUE_APP_PLATFORM } = process.env;
 
@@ -67,8 +67,8 @@
 <%_   if (rootOptions.cssPreprocessor == 'sass' || rootOptions.cssPreprocessor == 'scss'  || rootOptions.cssPreprocessor == 'dart-sass' ) { _%>
 <%#   -------------------- IS Using sass, scss OR dart-sass -------------------- -%>
 <style scoped lang="scss">
-  @import '~styles/style-one';
-  @import '~styles/style-two';
+  @import '~/styles/style-one';
+  @import '~/styles/style-two';
 
   img, Image {
     height: 20%;
@@ -81,8 +81,8 @@
 <%_   } else if (rootOptions.cssPreprocessor == 'stylus') { _%>
 <%#   -------------------- IS Using stylus -------------------- -%>
 <style scoped lang="stylus">
-  @import '~styles/style-one';
-  @import '~styles/style-two';
+  @import '~/styles/style-one';
+  @import '~/styles/style-two';
 
   img, Image
     height 20%
@@ -94,8 +94,8 @@
 <%_   } else if (rootOptions.cssPreprocessor == 'less') { _%>
 <%#   -------------------- IS Using Less -------------------- -%>
 <style scoped lang="less">
-  @import '~styles/style-one';
-  @import '~styles/style-two';
+  @import '~/styles/style-one';
+  @import '~/styles/style-two';
 
   img, Image {
     height: 20%;
@@ -109,8 +109,8 @@
 <%_ } else { _%>
 <%# -------------------- IS Using standard CSS -------------------- -%>
 <style scoped>
-  @import '~styles/style-one';
-  @import '~styles/style-two';
+  @import '~/styles/style-one';
+  @import '~/styles/style-two';
 
   img, Image {
     height: 20%;

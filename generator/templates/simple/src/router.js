@@ -22,5 +22,5 @@ export const options = {
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     }
   ]
-})
+}
 export default new Router(options)

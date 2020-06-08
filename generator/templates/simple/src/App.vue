@@ -145,7 +145,7 @@
 <%_   if (rootOptions.cssPreprocessor == 'sass' || rootOptions.cssPreprocessor == 'scss'  || rootOptions.cssPreprocessor == 'dart-sass' ) { _%>
 <%#   -------------------- IS Using sass, scss OR dart-sass -------------------- -%>
 <style web lang="scss">
-  @import '~styles/style-one';
+  @import '~/styles/style-one';
 
   .w-page {
     height: 100%;
@@ -154,7 +154,7 @@
 
 </style>
 <style native lang="scss">
-  @import '~styles/style-one';
+  @import '~/styles/style-one';
 
   .w-page {
     height: 100%;
@@ -165,7 +165,7 @@
 <%_   } else if (rootOptions.cssPreprocessor == 'stylus') { _%>
 <%#   -------------------- IS Using stylus -------------------- -%>
 <style web lang="stylus">
-  @import '~styles/style-one';
+  @import '~/styles/style-one';
 
   .w-page
     height 100%
@@ -178,7 +178,7 @@
 <%_   } else if (rootOptions.cssPreprocessor == 'less') { _%>
 <%#   -------------------- IS Using Less -------------------- -%>
 <style web lang="less">
-  @import '~styles/style-one';
+  @import '~/styles/style-one';
 
   .w-page {
     height: 100%;
@@ -187,13 +187,13 @@
 
 </style>
 <style native lang="less">
-  @import '~styles/style-one';
+  @import '~/styles/style-one';
 </style>
 <%_   } _%>
 <%_ } else { _%>
 <%# -------------------- IS Using standard CSS -------------------- -%>
 <style web>
-  @import '~styles/style-one';
+  @import '~/styles/style-one';
 
   .w-page {
     height: 100%;
@@ -201,6 +201,6 @@
   }
 </style>
 <style native>
-  @import '~styles/style-one';
+  @import '~/styles/style-one';
 </style>
 <%_ } _%>

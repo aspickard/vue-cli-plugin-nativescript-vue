@@ -55,26 +55,26 @@
 <%_   if (rootOptions.cssPreprocessor == 'sass' || rootOptions.cssPreprocessor == 'scss'  || rootOptions.cssPreprocessor == 'dart-sass' ) { _%>
 <%#   -------------------- IS Using sass, scss OR dart-sass -------------------- -%>
 <style scoped lang="scss">
-  @import '~styles/style-two';
-  @import '~styles/style-one';
+  @import '~/styles/style-two';
+  @import '~/styles/style-one';
 </style>
 <%_   } else if (rootOptions.cssPreprocessor == 'stylus') { _%>
 <%#   -------------------- IS Using stylus -------------------- -%>
 <style scoped lang="stylus">
-  @import '~styles/style-two';
-  @import '~styles/style-one';
+  @import '~/styles/style-two';
+  @import '~/styles/style-one';
 </style>
 <%_   } else if (rootOptions.cssPreprocessor == 'less') { _%>
 <%#   -------------------- IS Using Less -------------------- -%>
 <style scoped lang="less">
-  @import '~styles/style-two';
-  @import '~styles/style-one';
+  @import '~/styles/style-two';
+  @import '~/styles/style-one';
 </style>
 <%_   } _%>
 <%_ } else { _%>
 <%# -------------------- IS Using standard CSS -------------------- -%>
 <style scoped>
-  @import '~styles/style-two';
-  @import '~styles/style-one';
+  @import '~/styles/style-two';
+  @import '~/styles/style-one';
 </style>
 <%_ } _%>

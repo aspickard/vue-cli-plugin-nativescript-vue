@@ -23,7 +23,7 @@
 <%_ if (!usingTS) { _%>
 <%# -------------------- Is Not Using TypeScript  -------------------- -%>
 <script>
-  import HelloWorld from 'components/HelloWorld';
+  import HelloWorld from '~/components/HelloWorld';
 
   const { VUE_APP_MODE, VUE_APP_PLATFORM } = process.env;
 
